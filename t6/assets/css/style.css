@@ -1,0 +1,64 @@
+.main {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 135px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.news_list {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 50px;
+}
+.news_cart {
+    display: flex;
+    flex-direction: column;
+    height: 177px;
+    width: 559px;
+    border-radius: 15px;
+    border: 1px solid #C0C0C0;
+    padding: 20px;
+    gap: 10px;
+}
+.text_top_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h1 {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.h4 {
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #C0C0C0;
+}
+.news_txt {
+}
+.h2 {
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.h3 {
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+
+}

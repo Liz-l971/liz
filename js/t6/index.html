@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div id ="modal">
+        <div class="window">
+            <button class = "close" onclick="close()">x</button>
+            <p class="inp_title">Название</p>
+            <input type="text" id = "input_title" class="input" value="">
+            <p class="inp_title">Текст новости</p>
+            <input type="text" id = "input_text" class="input text_area" value="">
+            <p class="inp_title">Имя автора</p>
+            <input type="text" id = "input_author" class="input" value="">
+            <button onclick="add()" class="add_btn" id="add_btn">Добавить новость</button>
+        </div>
+    </div>
+    <section class="main">
+        <div class="container">
+         
+            <div class="news_list">
+                
+            </div>
+            <button class="add_link" onclick="linkadd()">+</button>
+        </div>
+    </section>
+    <!-- <div class="modal" id="#modal">
+       
+    </div> -->
+
+</body>
+</html>

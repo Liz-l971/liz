@@ -15,15 +15,24 @@ document.addEventListener('keyup', function(event){
 });
 document.addEventListener('keydown', function(event){
 if(event.key=='D'){
-    block.style.left=(block.offsetLeft+1+"px");
+    if(block.offsetLeft!=back.offsetWidth){
+        block.style.left=(block.offsetLeft+1+"px");
+    }else{
+        block.style.left=(-100+"px");
+    }
   }
   if(event.key=='W'){
+    if(block.offsetTop)
     block.style.top=(block.offsetTop-1+"px");
   }
   if(event.key=='S'){
     block.style.top=(block.offsetTop+1+"px");
   }
   if(event.key=='A'){
-    block.style.left=(block.offsetLeft-1+"px");
+    if(block.offsetLeft!=-100){
+        block.style.left=(block.offsetLeft-1+"px");
+    }else{
+        block.style.left=(back.offsetWidth+"px");
+    }
   }
 });

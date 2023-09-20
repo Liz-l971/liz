@@ -3,6 +3,7 @@ let input_name = document.getElementById('input_name'),
 btn_sub = document.getElementsByClassName('btn_sub'), 
 form = document.querySelector(".form"),
 main = document.querySelector(".main"),
+h2 =  document.querySelector(".h2"),
 input_date = document.getElementById('input_date'); 
 function show_error(input,block,message){
     input.style.background = 'rgb(254, 190, 190)';
@@ -65,6 +66,8 @@ form.addEventListener('submit',function(event){
         input_date.value='';
         let link = '<a href="https://club.z-go.ru/" class="succses_link">Сайт клуба паутина</a>';
         main.insertAdjacentHTML('beforeend', link);
+        form.style.display='none';
+        h2.style.display='none';
     }else{
         event.preventDefault();
     }

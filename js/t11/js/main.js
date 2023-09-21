@@ -22,7 +22,7 @@ function show_error(input,er_name,message){
 }
 function succses(input,er_name){
     input.style.background='white';
-    input.value='';
+    input.style.border='1px solid black';
     let error = document.getElementById(er_name);
     error.textContent='';
 }
@@ -96,7 +96,10 @@ function add(){
                             </p>
                         </div>`
     news_list.insertAdjacentHTML('beforeend',new_news_elem);
+    input_one.value ='';
+    input_two.value ='';
 }
+
 }
 
     for(let i = 0;i<news_arr.length;i++){

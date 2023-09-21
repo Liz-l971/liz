@@ -98,7 +98,7 @@ function add(){
     news_list.insertAdjacentHTML('beforeend',new_news_elem);
     input_one.value ='';
     input_two.value ='';
-    modal.classList.remove('modal_active');
+  modal.classList.remove('modal_active');
 }
 
 }

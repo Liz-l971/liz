@@ -1,0 +1,22 @@
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+ 
+    width: 700px;
+}
+.block_info {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(44, 253, 156);
+    max-width: 200px;
+}
+h3{
+    color: #1e1e1e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+
+}

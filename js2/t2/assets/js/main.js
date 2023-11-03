@@ -20,21 +20,20 @@ function prev(){
     }
     show_btn(position);
 }
-// show_btn(position);
+
 function show_btn(pos){
-if(pos == -((Math.ceil(Number(slider_len)/2) *width)-width)){
-    next_btn.style.display = 'none';
-}
-if(pos > -((Math.ceil(Number(slider_len)/2) *width)-width)){
-    next_btn.style.display = 'block';
-}
-if(pos!=0){
-    prev_btn.style.display = 'block';
-}
-if(pos ==0 ){
-    prev_btn.style.display = 'none';
+    if(pos == -((Math.ceil(Number(slider_len)/2) *width)-width)){
+        next_btn.style.display = 'none';
+    }
+    if(pos > -((Math.ceil(Number(slider_len)/2) *width)-width)){
+        next_btn.style.display = 'block';
+    }
+    if(pos!=0){
+        prev_btn.style.display = 'block';
+    }
+    if(pos ==0 ){
+        prev_btn.style.display = 'none';
+
+    }
 
 }
-
-}
-// alert((Math.ceil(Number(slider_len)/2) *width)-width)

@@ -7,6 +7,7 @@ setTimeout(()=>{
 timebtn.addEventListener('click',()=>{
     countfull()
 });
+timebtn.addEventListener('')
 function countfull(){
     timeblock.classList.add('active');
     let count = 5;

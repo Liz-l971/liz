@@ -1,0 +1,51 @@
+.header {
+    background: linear-gradient(180deg, #0E0E0E 0%, #1E1E1E 100%);
+    padding: 15px 0;
+  }
+  .header_content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_block {
+   width: 268px;
+   display: flex;
+   gap: 15px;
+   align-items: center; 
+  }
+  
+  .header_menu {
+    display: flex;
+    gap: 22px;
+  }
+  .header_link {
+    color: #FFF;
+  
+  font-family: Amiko;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: 'Amiko', sans-serif;
+  }
+  .small_btn {
+    padding: 12px 11px;
+    max-width: 155px;
+    min-width: 113px;
+  color: #3C2C0D;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  text-align: center;
+  }
+  .orange {
+  border: 1px solid #C48406;
+  background: #FEC351;
+  }
+  .grenn {
+  border: 1px solid #047955;
+  background: #07C78D;
+  }

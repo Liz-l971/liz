@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Test 500na700</title>
+    <script defer="defer" src="assets/js/bundle.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header"><img class="header__logo" src="assets/img/Logo.svg">
+                <div class="header__menu">
+                    <nav>
+                        <ul class="header__nav">
+                            <li class="header__nav-item header__nav-item_paragraph">
+                                <div class="header__nav-point"><a href="#">О нас</a> <img class="arrow"
+                                        src="assets/img/Arrow.svg"></div>
+                                <div class="header__links">
+                                    <div class="header__links-wrapper"><a class="link">О 500на700</a> <a
+                                            class="link">Документы</a> <a class="link">Устойчивое развитие</a> <a
+                                            class="link">Команда</a> <a class="link">Стратегия</a></div>
+                                </div>
+                            </li>
+                            <li class="header__nav-item header__nav-item_paragraph">
+                                <div class="header__nav-point"><a href="#projects">Проекты</a> <img class="arrow"
+                                        src="assets/img/Arrow.svg"></div>
+                                <div class="header__links">
+                                    <div class="header__links-wrapper"><a class="link">О 500на700</a> <a
+                                            class="link">Документы</a> <a class="link">Устойчивое развитие</a> <a
+                                            class="link">Команда</a> <a class="link">Стратегия</a></div>
+                                </div>
+                            </li>
+                            <li class="header__nav-item"><a class="link" href="#news">Новости</a></li>
+                            <li class="header__nav-item"><a class="link" href="#faq">FAQ</a></li>
+                            <li class="header__nav-item"><a class="link" href="#subscribe">Контакты</a></li>
+                        </ul>
+                    </nav><button class="button_white button_open-modal">Связаться с нами</button>
+                </div>
+                <div class="burger burger_main"></div>
+            </div>
+        </div>
+    </header>
+    <div class="modal">
+        <form class="contact-us">
+            <div class="burger burger_active burger_contact-us"></div>
+            <h2 class="contact-us__title">Связаться с нами</h2>
+            <p class="message message_contact-us"></p><input class="contact-us__input" type="text" placeholder="Имя"
+                required> <input class="contact-us__input input_phone" type="tel" placeholder="Телефон" required>
+            <div class="checkbox checkbox_contact-us"><input type="checkbox" required> <label class="caption">Я согласен
+                    (-а) на обработку персональных данных</label></div><button type="submit"
+                class="button__contact-us">Отправить</button>
+        </form>
+    </div>
+    <main>
+        <div class="wrapper">
+            <section class="projects slider" id="projects">
+                <div class="slider__arrows slider__arrows_projects"><img
+                        class="slider__arrow-previous slider__arrow-previous_projects" src="assets/img/SliderArrow.svg">
+                    <img class="slider__arrow-next slider__arrow-next_projects" src="assets/img/SliderArrow.svg">
+                </div>
+                <div class="projects-list">
+                    <div class="slide slide_projects slide_active">
+                        <div class="projects__description"><span class="projects__tag caption">сайты</span>
+                            <h1 class="projects__title">Заголо вок 1 Заголо вок 1 Заголо вок 1</h1>
+                            <p class="projects__subtitle">Описание проекта Описание проекта Описание проекта Описание
+                                проекта Описание проекта Описание проекта Описание проекта Описание проекта</p>
+                        </div>
+                        <div class="projects__img"><img src="assets/img/slide1.png"></div>
+                    </div>
+                    <div class="slide slide_projects">
+                        <div class="projects__description"><span class="projects__tag caption">сайты</span>
+                            <h1 class="projects__title">Заголо вок 2 Заголо вок 2 Заголо вок 2</h1>
+                            <p class="projects__subtitle">Описание проекта Описание проекта Описание проекта Описание
+                                проекта Описание проекта Описание проекта Описание проекта Описание проекта</p>
+                        </div>
+                        <div class="projects__img"><img src="assets/img/slide1.png"></div>
+                    </div>
+                    <div class="slide slide_projects">
+                        <div class="projects__description"><span class="projects__tag caption">сайты</span>
+                            <h1 class="projects__title">Заголо вок 3 Заголо вок 3 Заголо вок 3</h1>
+                            <p class="projects__subtitle">Описание проекта Описание проекта Описание проекта Описание
+                                проекта Описание проекта Описание проекта Описание проекта Описание проекта</p>
+                        </div>
+                        <div class="projects__img"><img src="assets/img/slide1.png"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="news slider" id="news">
+                <h1 class="section-title">Новости</h1>
+                <div class="news__list">
+                    <div class="slide slide_news slide_active">
+                        <div class="news__img"><img src="assets/img/new1.png"></div>
+                        <h2 class="news__title">Заголовок новости 1</h2>
+                        <p class="news__subtitle">Описание новости в 3 строки Описание новости в 3 строкиОписание
+                            новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки</p>
+                        <p class="news__date">01 января 1990</p>
+                    </div>
+                    <div class="slide slide_news">
+                        <div class="news__img"><img src="assets/img/new2.png"></div>
+                        <h2 class="news__title">Заголовок новости 2</h2>
+                        <p class="news__subtitle">Описание новости в 3 строки Описание новости в 3 строкиОписание
+                            новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки</p>
+                        <p class="news__date">01 января 1990</p>
+                    </div>
+                    <div class="slide slide_news">
+                        <div class="news__img"><img src="assets/img/new3.png"></div>
+                        <h2 class="news__title">Заголовок новости 3</h2>
+                        <p class="news__subtitle">Описание новости в 3 строки Описание новости в 3 строкиОписание
+                            новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки</p>
+                        <p class="news__date">01 января 1990</p>
+                    </div>
+                    <div class="slide slide_news">
+                        <div class="news__img"><img src="assets/img/new4.png"></div>
+                        <h2 class="news__title">Заголовок новости 4</h2>
+                        <p class="news__subtitle">Описание новости в 3 строки Описание новости в 3 строкиОписание
+                            новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки</p>
+                        <p class="news__date">01 января 1990</p>
+                    </div>
+                    <div class="slide slide_news">
+                        <div class="news__img"><img src="assets/img/new5.png"></div>
+                        <h2 class="news__title">Заголовок новости 5</h2>
+                        <p class="news__subtitle">Описание новости в 3 строки Описание новости в 3 строкиОписание
+                            новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки</p>
+                        <p class="news__date">01 января 1990</p>
+                    </div>
+                    <div class="slide slide_news">
+                        <div class="news__img"><img src="assets/img/new6.png"></div>
+                        <h2 class="news__title">Заголовок новости 6</h2>
+                        <p class="news__subtitle">Описание новости в 3 строки Описание новости в 3 строкиОписание
+                            новости в 3 строкиОписание новости в 3 строки Описание новости в 3 строки</p>
+                        <p class="news__date">01 января 1990</p>
+                    </div>
+                </div>
+                <div class="slider__arrows slider__arrows_news"><img
+                        class="slider__arrow-previous slider__arrow-previous_news" src="assets/img/SliderArrow.svg">
+                    <img class="slider__arrow-next slider__arrow-next_news" src="assets/img/SliderArrow.svg">
+                </div>
+            </section>
+            <section class="faq" id="faq">
+                <h1 class="section-title">FAQ</h1>
+                <div class="accordion-list">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <h2 class="accordion__title">Какие услуги предоставляет ваша студия?</h2><img
+                                class="accordion__arrow" src="assets/img/Arrow.svg">
+                        </div>
+                        <div class="accordion__body">
+                            <p>Мы придерживаемся высоких стандартов качества и стремимся создавать уникальный дизайн,
+                                отвечающий потребностям и ожиданиям наших клиентов. Наши дизайнеры постоянно
+                                совершенствуют свои навыки и следят за новыми трендами в дизайне.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <h2 class="accordion__title">Как вы обеспечиваете качество и уникальность дизайна?</h2><img
+                                class="accordion__arrow" src="assets/img/Arrow.svg">
+                        </div>
+                        <div class="accordion__body">
+                            <p>Мы придерживаемся высоких стандартов качества и стремимся создавать уникальный дизайн,
+                                отвечающий потребностям и ожиданиям наших клиентов. Наши дизайнеры постоянно
+                                совершенствуют свои навыки и следят за новыми трендами в дизайне.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <h2 class="accordion__title">Предоставляете ли вы услуги по созданию контента для сайтов и
+                                приложений?</h2><img class="accordion__arrow" src="assets/img/Arrow.svg">
+                        </div>
+                        <div class="accordion__body">
+                            <p>Мы придерживаемся высоких стандартов качества и стремимся создавать уникальный дизайн,
+                                отвечающий потребностям и ожиданиям наших клиентов. Наши дизайнеры постоянно
+                                совершенствуют свои навыки и следят за новыми трендами в дизайне.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="white-background">
+            <div class="wrapper">
+                <section class="subscribe" id="subscribe">
+                    <div class="subscribe__description">
+                        <h1 class="subscribe__title">Подпишись на рассылку</h1>
+                        <p class="subscribe__subtitle">Отправляем анонсы новых статей, выпусков и трансляций</p>
+                        <p class="message message_subscribe"></p>
+                    </div>
+                    <form class="subscribe__form">
+                        <div class="subscribe__input-list"><input class="input_email" type="email"
+                                placeholder="Электронная почта" required> <input class="input_date" type="text"
+                                placeholder="Дата (например, 01.01.1990)" required> <input class="input_phone"
+                                type="tel" placeholder="Телефон" required> <input class="input_time" type="text"
+                                placeholder="Время (например, 10:00)" required></div>
+                        <div class="checkbox checkbox_subscribe"><input type="checkbox" required> <label
+                                class="caption">Я согласен (-а) на обработку персональных данных</label></div><button
+                            type="submit" class="button__contact-u s">Отправить</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer__sources"><img class="footer__logo" src="assets/img/whiteLogo.svg">
+                    <div class="footer__icon-list"><a class="footer__icon" href="https://www.youtube.com/"><img
+                                src="assets/img/youtube.svg"></a><a class="footer__icon"
+                            href="https://web.telegram.org"><img src="assets/img/telegram.svg"></a><a
+                            class="footer__icon" href="https://vk.com"><img src="assets/img/vk.svg"></a></div>
+                </div>
+                <nav>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a class="link" href="#">О нас</a></li>
+                        <li class="footer__nav-item"><a class="link" href="#projects">Проекты</a></li>
+                        <li class="footer__nav-item"><a class="link" href="#news">Новости</a></li>
+                        <li class="footer__nav-item"><a class="link" href="#faq">FAQ</a></li>
+                        <li class="footer__nav-item"><a class="link" href="#subscribe">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__info"><a>г. Горгород,<br>ул. Мегаполисная, 1</a> <a class="link"
+                        href="tel:+70000000000">+7 (000) 000-00-00</a> <a class="link"
+                        href="mailto:john@example.com">email@email.ru</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

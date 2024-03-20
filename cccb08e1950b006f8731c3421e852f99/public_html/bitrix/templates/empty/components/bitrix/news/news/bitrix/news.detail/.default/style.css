@@ -1,0 +1,19 @@
+.news-detail{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:space-between;
+    padding:60px 0;
+}
+.newsDetailContent{
+    display: flex;
+    gap: 20px;
+    flex-direction:column;
+    width:50%;
+}
+@media(max-width: 1169px) {
+  .newsDetailContent{
+   
+    width:100%;
+}
+}

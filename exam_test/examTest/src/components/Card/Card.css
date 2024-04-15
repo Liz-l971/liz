@@ -1,0 +1,11 @@
+.cardContent{
+    width: 300px;
+}
+.card__image{
+    width: 300px;
+}
+.cartText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

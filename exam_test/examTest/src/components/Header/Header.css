@@ -1,0 +1,13 @@
+header{
+    padding: 10px 0;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+}
+.header__block__menu{
+    display: flex;
+    gap: 20px;
+}

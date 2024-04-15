@@ -1,0 +1,19 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.block{
+padding: 100px 0;
+}
+.title{
+  color: rgb(10, 119, 82);
+  font-size: 36px;
+  margin-bottom: 50px;
+}

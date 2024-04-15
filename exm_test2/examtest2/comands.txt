@@ -1,0 +1,10 @@
+npm  install  react-slick
+npm  install  slick-carousel
+npm  install  react-router-dom
+1. npm create vite 
+2. projectName
+3. Выбираем React
+4. Выбираем JavaScript
+5. cd projectName
+6. npm install
+7. npm run dev

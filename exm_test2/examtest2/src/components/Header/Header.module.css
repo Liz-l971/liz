@@ -1,0 +1,29 @@
+header{
+    padding: 10px 0;
+    background-color: aquamarine; 
+
+}
+.header_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav{
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    color: black;
+}
+a:hover{
+    color: rgb(10, 119, 82);
+}
+
+button{
+    background: rgb(10, 119, 82);
+    color: white;
+    cursor: pointer;
+}

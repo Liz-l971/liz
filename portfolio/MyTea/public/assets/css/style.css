@@ -1,0 +1,19 @@
+.whiteBlock_banner{
+    padding-top: 90px;
+    width: 40%;
+    color: #222222;
+}
+.bannerImg{
+    width: 75%;
+    height: 450px;
+    object-fit: cover;
+}
+.bannerBtn{
+    padding: 5px 20px;
+    border-radius: 7px;
+    transition: all ease-in-out 0.3s;
+}
+.bannerBtn:hover{
+    background-color: #222222;
+    color: white;
+}

@@ -1,0 +1,23 @@
+<svg width="64" height="45" viewBox="0 0 64 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_52_64)">
+<path d="M61 37C62.1 37 63 36.1 63 35V3C63 1.9 62.1 1 61 1H3C1.9 1 1 1.9 1 3V35C1 36.1 1.9 37 3 37H61Z" stroke="#FBC918" stroke-width="2"/>
+<path d="M32 34C40.2843 34 47 27.2843 47 19C47 10.7157 40.2843 4 32 4C23.7157 4 17 10.7157 17 19C17 27.2843 23.7157 34 32 34Z" stroke="#FBC918" stroke-width="2"/>
+<path d="M28.1 23.4C28.1 25.4 29.9 27 32.1 27C34.3 27 36.1 25.4 36.1 23.4C36.1 20.5 32.1 19 32.1 19C32.1 19 28.1 17.5 28.1 14.6C28.1 12.6 29.9 11 32.1 11C34.3 11 36.1 12.6 36.1 14.6" stroke="#D74FC7" stroke-width="2"/>
+<path d="M32.1 7.10001V31" stroke="#D74FC7" stroke-width="2"/>
+<rect y="10" width="10" height="17" rx="4" stroke="#FBC918" stroke-width="2"/>
+<rect x="58" y="10" width="5" height="17" rx="2.5" stroke="#FBC918" stroke-width="2"/>
+</g>
+<circle cx="13" cy="39" r="6" fill="#FBC918"/>
+<circle cx="13" cy="39" r="6" fill="#FBC918"/>
+<circle cx="13" cy="39" r="6" fill="#FBC918"/>
+<circle cx="13" cy="39" r="6" fill="#FBC918"/>
+<circle cx="53" cy="39" r="6" fill="#FBC918"/>
+<circle cx="53" cy="39" r="6" fill="#FBC918"/>
+<circle cx="53" cy="39" r="6" fill="#FBC918"/>
+<circle cx="53" cy="39" r="6" fill="#FBC918"/>
+<defs>
+<clipPath id="clip0_52_64">
+<rect width="64" height="38" fill="white"/>
+</clipPath>
+</defs>
+</svg>

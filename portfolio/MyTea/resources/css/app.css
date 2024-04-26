@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.whiteBlock_banner{
+    padding-top: 90px;
+    width: 40%;
+    color: #222222;
+}
+.bannerImg{
+    width: 75%;
+    height: 450px;
+    object-fit: cover;
+}
+.bannerBtn{
+    padding: 5px 20px;
+    border-radius: 7px;
+    transition: all ease-in-out 0.3s;
+}
+.bannerBtn:hover{
+    background-color: #222222;
+    color: white;
+}
+@layer components {
+    .container {
+        @apply max-w-7xl px-5 mx-auto;
+    }
+    .button {
+        @apply hover:bg-white hover:text-neutral-900 font-medium transition border border-white rounded py-4 px-12;
+    }
+    .button-fill {
+        @apply bg-white text-neutral-900 hover:bg-transparent hover:text-white font-medium transition border border-white rounded py-4 px-12;
+    }
+    .input {
+        @apply outline-0 bg-transparent border border-white border-opacity-25 focus:border-opacity-100 rounded text-white py-4 px-7 placeholder-white placeholder-opacity-50 focus:placeholder-transparent transition w-[400px];
+    }
+}

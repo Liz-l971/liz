@@ -8,3 +8,4 @@ npm  install  react-router-dom
 5. cd projectName
 6. npm install
 7. npm run dev
+https://reactapi.pautinaweb.ru/objects.php

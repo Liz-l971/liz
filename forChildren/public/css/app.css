@@ -1,0 +1,2338 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.error{
+    color:red;
+}
+.add__ballance{
+    cursor: pointer;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.container{
+    width: 92.7%;
+    margin: 0 auto; 
+}
+
+.h1 {
+    font-family: 'Tactic_Sans_h1';
+    font-size: 80px;
+    line-height: 96px;
+    font-weight: 400;
+    font-style: normal;
+}
+.h2 {
+font-family: 'Tactic_Sans_bld';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+}
+.h3 {
+    font-family: 'Tactic_Sans_med';
+    font-size: 32px;
+}
+.h6{
+    font-family: 'Tactic_Sans_h6';
+    font-size: 20px;
+    font-weight: 400;
+}
+.h5{
+    font-family:'Tactic_Sans_med';
+    font-size: 24px;
+    font-weight: 400;
+}
+.h4 {
+    font-family: 'Tactic_Sans_med';
+    font-size: 36px;
+}
+.h6med {
+    font-family: 'Tactic_Sans_med';
+    font-size: 20px;
+}
+.red{
+    font-family: 'Tactic_Sans_h6';
+    color:red;
+
+}
+.header {
+    position: fixed;
+    top:0;
+    padding: 15px 0;
+    background-color: #ffffff;
+    z-index: 999;
+    width: 100%;
+    transition: transform .1s linear;
+}
+.header.hide{
+transform: translateY(-129px);
+}
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.header__burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #414042;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .header__burger-btn span {
+    background-color: #414042;
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+.filter_bar_smartfone{
+
+} 
+.logo_link {
+}
+.logo{
+    width: 99%;
+}
+.header_menu {
+    display: flex;
+    /* justify-content: center; */
+    gap: 50px;
+}
+
+.header_link {
+    display: table;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    border-bottom: 1px solid transparent;
+    height: 20px;
+}
+.header_link:hover{
+    border-bottom: 1px solid #FFB800;
+
+}
+a.profile_link.two_prof{
+    display: none;
+}
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 170px;
+}
+a.profile_link.one_prof {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    color: #000000;
+}
+
+.two {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.banner {
+    margin-top: 129px;
+    padding-left: 8.4%;
+    padding-right: 10%;
+    padding-top: 90px;
+    padding-bottom: 25px;
+
+}
+.banner .h1{
+    position: relative;
+    white-space: nowrap;
+    line-height: 96px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    color: #000000;
+    
+}
+.banner .h1::before{
+    content: "";
+    position: absolute;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: line;
+    left: -3.5%;
+    bottom: 100px; 
+    width: 745px;
+    height: 38px;
+    /* transform: translatey(-50%); */
+    background: #FFB800;
+    border-radius: 19px;
+    z-index: -1;
+    
+
+}
+
+    @keyframes line {
+        0%{width: 5px;}
+        100%{width: 745px;}
+    }
+.banner_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+
+}
+
+
+.banner_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 20px;
+  
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+.btn_one {
+    max-width: 320px;
+    padding: 17px 38px;
+    border-radius: 30px;
+    background-color: #FFB800;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    max-height: 60px;
+    white-space: nowrap;
+}
+.btn_one:hover{
+transform: scale(1.05);
+}
+.btn_two {
+    max-width: 320px;
+    padding: 17px 38px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    max-height: 60px;
+    white-space: nowrap;
+}
+.btn_two:hover{
+    transform: scale(1.05);
+}
+.banner_img{
+ 
+    width: 47.3254086487%;
+    max-width: 637px;
+}
+
+/* Ãâ€˜Ãâ€ºÃÅ¾ÃÅ¡ ÃÂ¡ ÃÅ“Ãâ€¢ÃÂÃÂ® Ãâ€”ÃÂÃâ€ÃÂÃÂ§ */
+
+.nav_tasks {
+background: url(/images/mainpage_background.svg?850b1d52942f0acbaa43ec3d7f65769c) center, no-repeat;
+/* background-repeat: no-repeat; */
+background-size: cover;
+width: 100%;
+height: auto;
+
+}
+.nav_tasks2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-bottom: 300px;
+    padding-right: 7.5%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.title {
+    font-family: 'Tactic_Sans_bld';
+    font-weight: 400;
+    font-size: 48px;
+    padding-bottom: 90px;
+    color: #414042;
+}
+.nav_tasks_content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    height: 252px;
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+    justify-content: space-between;
+        
+}
+
+.link_nav{
+    color:#000000;
+}
+
+.link_nav2{
+    color:#000000;
+    margin-top: 15px;
+}
+
+/* ÃÂ¡Ãâ€¢ÃÅ¡ÃÂ¦ÃËœÃÂ¯ ÃÂ¡ÃÅ¾ ÃÂ¡ÃÅ¸ÃËœÃÂ¡ÃÅ¡ÃÅ¾ÃÅ“ Ãâ€”ÃÂÃâ€ÃÂÃÂÃËœÃâ„¢ */
+
+.journal {
+ 
+    padding-top: 200px;
+    padding-left: 7%;
+    max-width: 1920px;
+    margin: 0 auto;
+   
+} 
+.journal_top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 7%;
+}
+.add {
+    border-radius: 20px; 
+}
+.add .h6{
+    font-family: 'Tactic_Sans_med';
+}
+
+
+.journal .title{
+    color: #414042;
+}
+
+.journal_content {
+    
+    display: flex;
+    gap: 27px;
+    justify-content: space-between;
+
+}
+
+.journal_content .h6{
+    font-family: 'Tactic_Sans_med';
+}
+
+.tasks_list {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.task_block {
+    width: 100%;
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    border-top: 1pt solid #dcd9d9;
+    transition: all ease-in-out 0.3s;
+    color: #000000;
+    
+}
+
+.task_block:hover{
+background-color:#D3D2D2;
+padding: 30px 20px;
+width: 102.8%;
+}
+
+.task_block .h6{
+    margin-top: 9px;
+    min-width: 140px;
+    white-space: nowrap;
+}
+
+
+.yellow {
+    color: #FFB800;
+}
+
+.h6{
+    font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+.filter_bar {
+position: relative;
+
+}
+.filter_bar_smartfone{
+display: none;
+    
+}
+
+.bar_sticky{
+    position: sticky;
+    top: 38px;
+    padding: 47px 70px 57px 40px;
+    background-color: #efeded8c;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 764px; */
+}
+
+.filter_link {
+    height: 14px;
+    white-space: nowrap;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+}
+
+.filter_link:hover{
+    color: #FFB800;
+}
+
+/* ÃÂ¤Ã‘Æ’Ã‘â€šÃ‘â€šÃÂµÃ‘â‚¬ */
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 29px;
+    background: #D9D9D9;
+    
+}
+.main_foot{
+    position: unset;
+    height: 300px;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.small_txt {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-family: 'Tactic_Sans_h6';
+    font-size: 14px;
+}
+.main_foot .small_txt {
+   padding-top: 80px;
+}
+/* ÃÂ§ÃÂÃÂ¢ */
+.chat_header{
+    position: fixed;
+    top:0;
+    z-index: 889;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 206px;
+    overflow: hidden;
+    /* background-color: ; */
+  
+}
+.chat_head{
+    position: unset;
+}
+.chat {
+    margin-top: 144px;
+    padding-top: 140px;
+    position: relative;
+}
+.chat_wrap {
+    
+
+}
+.chat_top_content{
+    display: flex;
+    justify-content: center;
+    gap: 32%;
+    align-items: center;
+    width: 100%;
+}
+.chat_top_content::before{
+    content: "";
+    position: absolute;
+    /* background: #FFB800; */
+    background: linear-gradient(#fff 11%, #FFB800 12%);
+    height: 120px;
+    z-index: -1;
+    width: 100%;
+}
+.chat_top_content .title{
+    margin: 0;
+    padding: 0;
+}
+.chat_profile_txt{
+    margin-top: 0;
+}
+.chat_profile{
+display: flex;
+align-items: center;
+gap: 35px;
+color: #000000;
+}
+.chat_profile_txt{
+    text-align: right;
+}
+.user_img {
+   
+    /* margin-top: 5px; */
+
+}
+.one{
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 105px;
+height: 105px;
+}
+.chat_content{
+    position: relative;
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+.chat_menu_fix{
+
+}
+.chat_menu_bar {
+    position: relative;
+}
+.chat_bar_sticky{
+position: fixed;
+z-index: 1000;
+top: 244px;
+height: 100vh;
+width: 350px;
+overflow-y: scroll;
+}
+/* ÃÂ ÃÂ°ÃÂ±ÃÂ¾Ã‘â€šÃÂ°ÃÂµÃ‘â€š ÃÂ² Firefox */
+.chat_bar_sticky {
+    scrollbar-width: 5px;
+    scrollbar-color: rgb(217, 217, 224) transparent;
+  }
+  
+  /* ÃÂ ÃÂ°ÃÂ±ÃÂ¾Ã‘â€šÃÂ°ÃÂµÃ‘â€š ÃÂ² Chrome, Edge ÃÂ¸ Safari */
+  .chat_bar_sticky::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+  }
+  
+  .chat_bar_sticky::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chat_bar_sticky::-webkit-scrollbar-thumb {
+    background-color: rgb(217, 217, 224);
+    border-radius: 20px;
+  }
+.chat_menu_content {
+
+ height: 1200px;
+}
+.chat_link {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 15px 0;
+    transition: all ease-in-out 0.3s;
+}
+.chat_link:hover{
+    background-color: #FFB800;
+}
+.chat_link .h6 {
+    font-family: 'Tactic_Sans_med';
+    margin-left: 25%;
+    color: #000000;
+
+}
+.chat_messages_content {
+width: 100%;
+position: relative;
+/* margin-left: 390px; */
+}
+.chat_mesagess {
+    padding: 280px 21px;
+    display: flex;
+    padding-bottom:100px;
+    flex-direction: column;
+    gap: 20px;
+    /* max-height: 630px; */
+  height: -moz-min-content;
+  height: min-content;
+
+}
+.messege {
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 800px;
+    padding: 25px 35px;
+    border-radius: 30px;
+    word-break: break-all;
+    
+}
+.messege:last-child {
+ margin-bottom: 30px;
+}
+.get {
+    position: relative;
+    /* top: 30; */
+    /* left: 30px; */
+    display: flex;
+    align-items: flex-start;
+    background: #D9D9D9;
+}
+.h5 {
+}
+.set {
+    margin-left: auto;
+    background-color:  rgba(255, 184, 0, 0.35);
+}
+.chat_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.write_chat_form{
+    position: fixed;
+    /* left: 350px; */
+    bottom: 0;
+    padding: 30px 15%;
+    width: 100%;
+    
+}
+.write_message_chat {
+    /* padding: 30px 21px; */
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.write_message_chat_input {
+    height: 50px;
+    width: 100%;
+    background: #D9D9D9;
+    /* border-radius: 25px; */
+    border: none;
+}
+
+/* .input_icons {
+    display: block;
+    margin-right: 25px;
+} */
+/* .input_icons:last-child{
+    margin: 0;
+  margin-left: auto;
+} */
+.pin_link {
+}
+.send_link{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+}
+/* .input_icons{
+
+    background-image: url(../img/send.svg);
+    height: 18px;
+    background-repeat: no-repeat;
+    position: absolute;
+z-index: 1000;
+} */
+.input_icon_send{
+    background-image: url(/images/send.svg?b261e62b8d66feb5821607289ddc59a4);
+    height: 18px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.btn_send_chat{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    width: 30px;
+}
+
+/* Ãâ€™ÃÂ«Ãâ€™ÃÅ¾Ãâ€ ÃÅ¾Ãâ€ÃÂÃÅ¾Ãâ€œÃÅ¾ Ãâ€”ÃÂÃâ€ÃÂÃÂÃËœÃÂ¯ */
+.one_task {
+    margin-top: 144px;
+    padding: 60px 0;
+}
+.one_task_content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 7%;
+}
+.left_task_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 65%;
+}
+.one_task .title {
+    margin: 0;
+    padding: 0;
+}
+.orange {
+    color: #FFB800;
+}
+.user_client_link {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    gap: 40px;
+}
+.user_img {
+}
+.three {
+    height: 170px;
+    width: 170px;
+    border-radius: 30px 30px 30px 0;
+}
+.client_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.client_txt .h4{
+    font-family: 'Tactic_Sans_med';
+    font-weight: 400;
+}
+.one_task_txt {
+    background: #D9D9D9;
+    border-radius: 0px 30px 30px 30px;
+    padding: 40px;
+    word-break: break-all;
+}
+.one_task_txt .h3{
+    font-family: 'Tactic_Sans_h6';
+    font-weight: 400;
+font-size: 32px;
+}
+.right-task_content {
+    width: 35%;
+    padding-top: 50px;
+    
+}
+.right-task_content .h2{
+    font-family: 'Tactic_Sans_med';
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.response {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.response_input {
+    height: 301px;
+background: #D9D9D9;
+border-radius: 30px;
+border: none;
+min-height: 320px;
+max-height: 330px;
+
+max-width: 100%;
+padding-top: 20px;
+padding-left: 30px;
+font-family: 'Tactic_Sans_h6';
+
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+
+color: #00000089;
+}
+.response .btn_one {
+    font-family:'Tactic_Sans_med';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    width: 100%;
+    max-width: 999px;
+}
+.response .btn_one:hover{
+    transform: scale(1);
+    background-color: #cf9503;
+}
+/* ÃÅ¸ÃÂ ÃÅ¾ÃÂ¤ÃËœÃâ€ºÃÂ¬ */
+.profile {
+    margin-top: 144px;
+    padding: 7%;
+    
+}
+
+.profile_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.name_user {
+    display: flex;
+    gap: 6%;;
+}
+.photo_and_role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+}
+.fio{
+font-family: 'Tactic_Sans_med';
+font-weight: 400;
+font-size: 64px;
+line-height: 125%;
+color: #000000;
+}
+.user_img {
+}
+.four {
+    width: 280px;
+    height: 280px;
+    border-radius: 30px;
+}
+.h5 {
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    
+}
+.contacts .h3{
+    font-family: 'Tactic_Sans_med';
+    font-weight: 400;
+    word-break: break-all;
+}
+.h3 {
+}
+.btn_one {
+    max-width: 100%;
+    text-align: center;
+}
+.profile_edit{
+    min-width: 455px;
+    width: 100%;
+    white-space: nowrap;
+}
+.profile_edit .h6 {
+    font-family: 'Tactic_Sans_med';
+}
+/* ÃÅ¾ÃÂ¢Ãâ€”ÃÂ«Ãâ€™ÃÂ« ÃÅ¾ Ãâ€”ÃÂÃÅ¡ÃÂÃâ€”ÃÂ§ÃËœÃÅ¡ÃÂÃÂ¥ */
+
+.reviews_user {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.user_review_list {
+    max-height: 724px;
+    overflow-y: scroll;
+    width: 100%;
+
+}
+.user_review_list {
+    scrollbar-width: 5px;
+    scrollbar-color: rgb(217, 217, 224) transparent;
+  }
+  
+  /* ÃÂ ÃÂ°ÃÂ±ÃÂ¾Ã‘â€šÃÂ°ÃÂµÃ‘â€š ÃÂ² Chrome, Edge ÃÂ¸ Safari */
+  .user_review_list::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+  }
+  
+  .user_review_list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .user_review_list::-webkit-scrollbar-thumb {
+    background-color: rgb(217, 217, 224);
+    border-radius: 20px;
+  }
+.rewiew_item {
+    padding: 25px 0;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-top: 0.5px solid #C8C8C8;
+    border-bottom: 0.5px solid #C8C8C8;
+    word-break: break-all;
+   
+}
+/* Ãâ€ÃÅ¾Ãâ€˜ÃÂÃâ€™ÃËœÃÂ¢ÃÂ¬ Ãâ€”ÃÂÃâ€ÃÂÃÂÃËœÃâ€¢ */
+.add {
+    margin-top: 144px;
+    padding: 70px 150px;
+}
+.add_conent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.add_form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.input {
+    background: #D9D9D9;
+border-radius: 20px;
+padding: 20px 0;
+padding-left: 30px;
+border: none;
+
+}
+.textarea {
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding: 20px 0;
+    padding-left: 30px;
+    border: none;
+}
+.add_input{
+  min-width: 99%;
+    max-width: 100%;
+    max-height: 600px;
+}
+.add_form .btn_one {
+    font-family:'Tactic_Sans_med';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    width: 50%;
+    max-width: 999px;
+    margin-left: auto;
+}
+.add_form .btn_one:hover{
+    transform: scale(1);
+    background-color: #cf9503;
+}
+.add_form .inputs_edit_profiles_txt .input{
+    background-color: #d9d9d9;
+}
+.add_form .edit_short_inp{
+    width: 32%;
+}
+
+.add_textarea{
+    min-width: 99%;
+    max-width: 100%;
+
+}
+.rev_inp{
+    height: 300px;
+}
+.add_form .h6{
+    margin: 0 auto;
+    text-align: center;
+}
+.add_txt_time{
+    min-width: 99%;
+    max-width: 100%;
+text-align: left;
+}
+.add_txt_time .h6{
+font-weight: 400;
+}
+/* ÃÂ Ãâ€¢Ãâ€ÃÂÃÅ¡ÃÂ¢ÃËœÃÂ ÃÅ¾Ãâ€™ÃÂÃÂÃËœÃâ€¢ ÃÅ¸ÃÂ ÃÅ¾ÃÂ¤ÃËœÃâ€ºÃÂ¯ */
+.edit_profil {
+    margin-top: 144px;
+    padding: 100px 0;
+    padding-left: 13%;
+    padding-right: 11%;
+}
+.edit_prof_content {
+    display: flex;
+}
+.form_e{
+    display: flex;
+}
+.change_photo_link {
+    color: #000000;
+}
+.edit_profile {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+}
+.inputs_edit_profile{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ 
+}
+.sign_in .inputs_edit_profile{
+   width: 60%;
+   margin: 0 auto;
+}
+.checkbox {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 5%;
+   max-width: 90%;
+}
+.check_input {
+    display: flex;
+    align-items: center;
+}
+
+/*  */
+  /* woirhgpwsiehri */
+  input[name=role]{
+    display: none;
+  }
+  input[name=role] + label::before{
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #D2D2D2;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  input[name=role]+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #D2D2D2;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  input[name=role]:checked + label::before{
+    background: #FFB800;
+  }
+  #saveForm{
+    pointer-events: none;
+    background: #ccc;
+    color: #888;
+  }
+  input[name=role]:checked + label ~ #saveForm{
+    pointer-events: auto;
+    background: #FFB800;
+    color: #fff;
+  }
+  /* aleoaoigbrsoirg */
+  .inputs_edit_profiles_txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 20px;
+}
+.inputs_edit_profiles_txt .input {
+    background: #FFFFFF;
+border: 1px solid #001524;
+border-radius: 20px;
+height: 50px;
+padding-top: 0;
+padding-bottom: 0;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: -0.04em;
+color: #262626;
+font-family: 'Tactic_Sans_med';
+}
+.edit_short_inp {
+    width: 30%;
+
+}
+.edit_med_inp {
+    width: 47%;
+}
+.edit_long_inp {
+    width: 100%;
+}
+.inputs_edit_profile .btn_one {
+    font-family:'Tactic_Sans_med';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    width: 50%;
+    max-width: 999px;
+    margin-left: auto;
+    margin-top: 25px;
+}
+.inputs_edit_profile .btn_one:hover{
+    transform: scale(1);
+    background-color: #cf9503;
+}
+/* ÃÅ¾ÃÅ¡ÃÂÃÅ¾ ÃÂ Ãâ€¢Ãâ€œÃËœÃÂ¡ÃÂ¢ÃÂ ÃÂÃÂ¦ÃËœÃËœ */
+
+.sign_up {
+    padding-top: 20%;
+    padding-bottom: 25%;
+}
+.sign_up_content {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+.grey {
+    color: #6f6f6f;
+}
+.sign_up_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+.sign_up_inp {
+    background: #FFFFFF;
+    border: 1px solid #001524;
+    border-radius: 20px;
+    height: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: #4d4c4c;
+    font-family: 'Tactic_Sans_med';
+}
+.sign_up_form .btn_one {
+    font-family:'Tactic_Sans_med';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    width: 100%;
+    max-width: 999px;
+    margin-top: 0;
+}
+.sign_up_form .btn_one:hover{
+    transform: scale(1);
+    background-color: #cf9503;
+}
+button.btn_two{
+    display: none;
+}
+.sign_up .btn_two {
+    font-family:'Tactic_Sans_med';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    width: 100%;
+    max-width: 999px;
+    margin-top: 25px;
+    width: 40%;
+    text-align: center;
+    margin-top: 0;
+}
+.sign_up .btn_two:hover{
+    transform: scale(1);
+    background-color: #8c8b89;
+}
+/* ÃÂ Ãâ€¢Ãâ€œÃËœÃÂ¡ÃÂ¢ÃÂ ÃÂÃÂ¦ÃËœÃÂ¯ */
+.sign_in {
+    
+    padding-top: 20%;
+    padding-bottom: 25%;
+}
+.signin_content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.signin_content .checkbox {
+    gap: 19%;
+}
+.signin_content .edit_short_inp {
+    width: 48%;
+}
+.signin_content .btn_one {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 0;
+}
+.del{
+    justify-content: unset;
+}
+.user_inf{
+    text-align: right;
+}
+.nav_smart_my_task{
+    display: none;
+}
+@media  (max-width: 1311px) {
+    .banner .h1 {
+        font-size: 70px;
+    }
+    .banner .h1::before{
+        width: 645px;
+    }
+        @keyframes line {
+            0%{width: 5px;}
+            100%{width: 645px;}
+        }
+        .nav_tasks_content {
+            grid-template-columns: repeat(3,1fr);
+            -moz-column-gap: 10px;
+                 column-gap: 10px;
+                
+        }
+        .bar_sticky{
+            padding: 32px 55px 42px 25px;
+        }
+        .fio{
+            font-size: 48px;
+            }
+        .four {
+                width: 220px;
+                height: 220px;
+            }
+        .contacts{
+            gap: 27px;
+        }
+ }
+ @media (max-width: 1195px) {
+    .logo{
+        width: 160px;
+    }
+    .banner .h1 {
+        font-family: 'Tactic_Sans_h1';
+        font-size: 64px;
+        line-height: 80px;
+      
+    }
+    .banner {
+        margin-top: 100px;
+        padding-top: 60px;
+        padding-bottom: 17px;
+    
+    }
+    .banner .h1::before{
+        width: 590px;
+        height: 30px;
+        transform: translatey(50%);
+        
+    
+    }
+    .banner_txt{
+        gap: 40px;
+    }
+    
+        @keyframes line {
+            0%{width: 5px;}
+            100%{width: 590px;}
+        }
+            .btn_one {
+                padding: 17px 25px;
+            }
+            .btn_two {
+                max-width: 320px;
+                padding: 17px 25px;
+            }
+       
+            
+            /* Ãâ€˜Ãâ€ºÃÅ¾ÃÅ¡ ÃÂ¡ ÃÅ“Ãâ€¢ÃÂÃÂ® Ãâ€”ÃÂÃâ€ÃÂÃÂ§ */
+            .title {
+                padding-bottom: 60px;
+            }
+            
+        
+        .bar_sticky{
+            padding: 32px 35px 42px 25px;
+
+        }
+        .fio{
+            font-size: 48px;
+            }
+        .four {
+                width: 180px;
+                height: 180px;
+                border-radius: 30px;
+            }
+         .profile_content{
+            gap: 80px;
+        }
+        .contacts{
+            gap: 27px;
+            max-width: 400px;
+        }
+        .profile_edit{
+            min-width: 0;
+        }
+ }
+ @media (min-width: 0px) and (max-width: 1080px) {
+    .h2 {
+    font-family: 'Tactic_Sans_bld';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    }
+    .h3 {
+        font-family: 'Tactic_Sans_med';
+        font-size: 20px;
+    }
+    .h6{
+        font-family: 'Tactic_Sans_h6';
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .h6{
+        font-family: 'Tactic_Sans_h6';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .h6med{
+        font-family:'Tactic_Sans_med';
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .h5{
+        font-family:'Tactic_Sans_med';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .h4 {
+        font-family: 'Tactic_Sans_med';
+        font-size: 24px;
+    }
+    .title {
+        font-size: 36px;
+        padding-bottom: 60px;
+
+    }
+    .logo{
+        width: 160px;
+    }
+    .header_menu{
+        gap: 30px;
+    }
+    a.profile_link.one_prof{
+        width: 140px;
+    }
+  .two{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+    }
+    .profile_link{
+        width: 140px;
+        gap: 10px;
+    }
+    .profile_link .two_prof{
+        display: none;
+    }
+    .banner{
+        padding-top: 30px;
+    }
+    .banner .h1 {
+        font-size: 48px;
+        line-height: 60px;
+      
+    }
+    .banner .h1::before{
+        width: 430px;
+        height: 20px;
+        transform: translatey(180%);
+    }
+        @keyframes line {
+            0%{width: 5px;}
+            100%{width: 430px;}
+        }
+    .banner_content{
+        gap: 1%;
+    }
+    .banner_img{
+        width: 44%;
+    }
+    .btns{
+        gap: 10px;
+    }
+    .banner_txt{
+        gap: 20px;
+    }
+    .btn_one {
+    padding: 8px 18px;
+    border-radius: 18px;
+    max-height: 40px;
+
+}
+
+
+.btn_two {
+    padding: 8px 18px;
+    border-radius: 18px;
+    max-height: 40px;
+}
+/* Ãâ€˜Ãâ€ºÃÅ¾ÃÅ¡ ÃÂ¡ ÃÅ“Ãâ€¢ÃÂÃÂ® Ãâ€”ÃÂÃâ€ÃÂÃÂ§ */
+.nav_tasks{
+  height: 600px;
+}
+
+.nav_tasks2{
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+
+.title {
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+        .nav_tasks_content {
+            grid-template-columns: repeat(3,1fr);
+            height: 192px;
+            -moz-column-gap: 10px;
+                 column-gap: 10px;
+          
+                
+        }
+        .link_nav{
+            height: 19px;
+            margin: 0;
+            padding: 0;
+        }
+        .bar_sticky{
+            position: sticky;
+            top: 38px;
+            padding: 35px 25px;
+            background-color: #efeded8c;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            /* height: 764px; */
+        }
+        .fio{
+            font-size: 48px;
+            }
+        .four {
+                width: 220px;
+                height: 220px;
+                border-radius: 30px;
+            }
+        .contacts{
+            gap: 27px;
+        }
+        .sign_up_content{
+            gap: 10px;
+        }
+      
+        .sign_up_inp{
+            height: 35px;
+            font-size: 16px;
+        }
+        .sign_up_form .btn_one{
+            font-size: 16px;
+            height: 35px;
+           
+        }
+        .sign_up .btn_two{
+          
+            padding: 0;
+            height: 35px;
+            max-width: 424px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sign_up .btn_two .h6med {
+            font-family: 'Tactic_Sans_h6';
+            font-size: 16px;
+        }
+        .sign_in {
+            padding-top: 35%;
+            padding-bottom: 35%;
+        }
+        .signin_content{
+            gap: 10px;
+        }
+        .signin_content .edit_profile{
+         
+            max-width: 424px;
+        }
+        .inputs_edit_profile{
+            gap: 15px;
+        }
+        .signin_content .checkbox{
+            gap: 0px;
+        }
+        .edit_profile .h6med {
+            font-size: 16px;
+        }
+        .inputs_edit_profiles_txt .input{
+            height: 35px;
+            font-size: 16px;
+        }
+        .inputs_edit_profiles_txt {
+            row-gap: 15px;
+        }
+        input[name=role]+label::before{
+            width: 0.7em;
+            height: 0.7em;
+        }
+        .one_task {
+            padding-top: 30px;
+            padding-bottom: 300px;
+            
+        }
+        .response_input{
+            font-size: 16px;
+            height: 100px;
+            min-height: 0;
+            
+        }
+        .response .btn_one {
+            font-size: 16px;
+        }
+        .left_task_content {
+            width: 100%;
+            gap: 20px;
+        }
+        .one_task_txt{
+            padding: 25px;
+        }
+        .right-task_content{
+            padding: 0;
+            width: 100%;
+            height: 300px;
+        }
+        .three{
+            width: 120px;
+            height: 120px;
+        }
+        .one_task_txt .h3 {
+            font-size: 20px;
+        }
+        .fio {
+            font-size: 32px;
+        }
+        .photo_and_role {
+            gap: 10px;
+        }
+        .four{
+            width: 130px;
+            height: 130px;
+        }
+        .contacts {
+            gap: 13px;
+        }
+      
+        .edit_profil{
+            padding-top: 50px;
+            padding-bottom: 300px;
+        }
+        .edit_profile{
+            flex-direction: column;
+            gap: 15px;
+        }
+        .edit_med_inp {
+            width: 48.5%;
+        }
+        .sign_two .inputs_edit_profile .btn_one{
+            font-size: 16px;
+         
+        }
+
+        .sign_two .inputs_edit_profile .btn_one{
+            width: 100%;
+        }
+        .edit_prof_content .edit_profile .inputs_edit_profile .btn_one{
+       
+            max-width: 245px;
+        }
+        .add {
+            padding: 50px 150px;
+            padding-bottom: 270px;
+        }
+        .add_conent{
+            gap: 15px;
+        }
+        .add_form .edit_short_inp{
+            width: 48%;
+        }
+        .input{
+            padding-left: 15px;
+            border-radius: 15px;
+            padding: 10px 15px;
+        }
+    
+        .add_form .btn_one{
+            font-size: 16px;
+            text-align: center;
+        }
+        .logo{
+            width: 140px;
+        }
+        .chat_header {
+            height: 156px;
+        }
+        .chat_top_content::before {
+            content: "";
+            position: absolute;
+            /* background: #FFB800; */
+            background: linear-gradient(#fff 20%, #FFB800 12%);
+            height: 120px;
+            z-index: -1;
+            width: 100%;
+        }
+        .chat_profile{
+            gap: 10px;
+        }
+        .one {
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 70px;
+            height: 70px;
+        }
+        .write_message_chat {
+            height: 40px;
+        }
+        .write_message_chat_input {
+            height: 40px;
+        }
+        .messege {
+            padding: 15px 20px;
+            
+        }
+    }
+    @media (min-width: 0px) and (max-width: 763px) {
+        /* .h2 {
+        font-family: 'Tactic_Sans_bld';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        } */
+        .container {
+            width: 86.7%;
+            margin: 0 auto;
+        }
+        .h3 {
+            font-family: 'Tactic_Sans_med';
+            font-size: 20px;
+        }
+        .h6{
+            font-family: 'Tactic_Sans_h6';
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .h6med {
+            font-family: 'Tactic_Sans_med';
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .h5{
+            font-family:'Tactic_Sans_med';
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .h3 {
+            font-family: 'Tactic_Sans_med';
+            font-size: 24px;
+        }
+        button.btn_two{
+            display: block;
+        }
+        .title {
+            font-size: 24px;
+            padding-bottom: 40px;
+    
+        }
+        .logo{
+            width: 120px;
+        }
+        .wrapper{
+            padding-bottom: 300px;
+        }
+        .header .header_menu{
+          flex-direction: column;
+            gap: 20px;
+        }
+        .men{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        .header__burger-btn {
+            display: block;
+        }
+        .header__burger-btn {
+            display: block;
+        }
+     
+        .men {
+            
+            position: absolute;
+            right: -180px;
+            top: 0;
+            width: 180px;
+            background-color: #efeded;
+            padding: 75px 20px 20px 20px;
+            transition: transform .5s;
+            border-radius: 20px;
+        }
+        .men .h6{
+            font-family:'Tactic_Sans_med';
+        }
+        a.profile_link.one_prof {
+            display: none;
+        }
+        .footer_content{
+            flex-direction: column;
+            gap: 25px;
+        }
+        .footer .header_menu{
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+        }
+        .main_foot{
+            height: 200px;
+        }
+      .main_foot .footer_content{
+            flex-direction: unset;
+        }
+        .footer .profile_link{
+            display: none;
+        }
+        /* .profile_link .two_prof{
+            display: none;
+            width: 110px;
+            gap: 10px;
+            justify-content: flex-start;
+        } */
+        .two_prof{
+            display: flex;
+        }
+        /* .menu__list {
+            display: block;
+        } */
+   
+        .header.open .men {
+            transform: translateX(-100%);
+        }
+      .two{
+            width: 35px;
+            height: 35px;
+            border-radius: 10px;
+        }
+      
+        a.profile_link.two_prof {
+            display: flex;
+            align-items: center;
+           
+            gap: 5px;
+            color: #000000;
+        }
+        
+        
+        .banner{
+            padding-top: 30px;
+        }
+        .banner .h1 {
+            font-size: 32px;
+            line-height: 45px;
+          
+        }
+        .banner .h1::before{
+           display: none;
+        }
+        .banner_content{
+            gap: 5%;
+        }
+        .banner_img{
+            width: 44%;
+        }
+        .btns{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .banner_txt{
+            gap: 13px;
+        }
+        .btns .btn_one {
+            padding: 9px 10px;
+            border-radius: 21px;
+            height: 60px;
+         
+        }
+    .journal_top .btn_two {
+        padding: 8px 18px;
+
+    }
+    
+    
+    .btns .btn_two {
+        padding: 9px 10px;
+        border-radius: 21px;
+        height: 60px;
+        margin-left: 80px;
+    }
+    /* Ãâ€˜Ãâ€ºÃÅ¾ÃÅ¡ ÃÂ¡ ÃÅ“Ãâ€¢ÃÂÃÂ® Ãâ€”ÃÂÃâ€ÃÂÃÂ§ */
+    .nav_tasks {
+        height: 415px;
+    }
+    
+    .nav_tasks2{
+        padding-top: 80px;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    
+  
+    
+            .nav_tasks_content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+                height: 192px;
+                -moz-column-gap: 10px;
+                     column-gap: 10px;
+              
+                    
+            }
+            .link_nav{
+                height: 19px;
+                margin: 0;
+                padding: 0;
+            }
+    .sign_up {
+        padding-top: 32%;
+        padding-bottom: 25%;
+    }
+    .sign_up_form {
+        width: 95%;
+    }
+    .input {
+        padding-left: 15px;
+        border-radius: 15px;
+        padding: 19px 15px;
+    }
+    .sign_up_form .btn_one {
+        font-size: 18px;
+        height: 60px;
+    }
+    .sign_up .btn_two {
+        width: 95%;
+        padding: 0;
+        height: 60px;
+        padding: 0;
+    }
+            .journal {
+                padding: 0;
+                padding-top: 120px;
+            }
+            .filter_bar_smartfone{
+                display: block;
+                position: fixed;
+                z-index: 999;
+                background-color: #efeded;
+                width: 100%;
+                bottom: -628px;
+                height: 628px;
+                transition: transform .5s;
+                
+            }
+            .filter_bar_smartfone .h6{
+               
+                font-family:'Tactic_Sans_med';
+            }
+            .open_fill{
+            transform: translateY(-328px); 
+            }
+            .filter_bar_smartfone .bar_sticky{
+                flex-wrap: wrap;
+                flex-direction: unset;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .filter_bar_smartfone .bar_sticky .filter_link{
+              
+                max-width: 160px;
+            }
+            .filter_bar{
+                display: none;
+            }
+            /* .bar_sticky{
+               display: none;
+        
+            } */
+            .profile_content{
+                flex-direction: column;
+                gap: 40px;
+            }
+            .fio{
+                font-size: 48px;
+                }
+            .four {
+                    width: 190px;
+                    height: 190px;
+                    border-radius: 30px;
+                }
+            .contacts{
+                gap: 27px;
+            }
+            .sign_up_content{
+                gap: 10px;
+            }
+            input {
+                padding-left: 15px;
+                border-radius: 15px;
+                padding: 19px 15px;
+            }
+        .sign_btn{
+            color: #bc1c1c;
+           
+         }
+            .sign_up .btn_two{
+                width: 80%;
+                padding: 0;
+                height: 35px;
+                padding: 0;
+             
+            }
+            .sign_up .btn_two .h6med {
+                font-family: 'Tactic_Sans_h6';
+                font-size: 16px;
+            }
+            .sign_in {
+                padding-top: 35%;
+                padding-bottom: 35%;
+            }
+            .signin_content{
+                gap: 10px;
+            }
+            .signin_content .edit_profile{
+                width: 60%;
+            }
+            .inputs_edit_profile{
+                gap: 15px;
+            }
+            .signin_content .checkbox{
+                gap: 0px;
+            }
+            .edit_profile .h6med {
+                font-size: 16px;
+            }
+            .inputs_edit_profiles_txt .input{
+                height: 35px;
+                font-size: 16px;
+            }
+            .inputs_edit_profiles_txt {
+                row-gap: 15px;
+            }
+            input[name=role]+label::before{
+                width: 0.7em;
+                height: 0.7em;
+            }
+            .one_task {
+                padding-top: 30px;
+                padding-bottom: 100px;
+                
+            }
+            .one_task_content {
+                flex-direction: column;
+                padding-left: 0;
+            }
+            .left_task_content {
+                width: 100%;
+                gap: 20px;
+            }
+            .one_task_txt{
+                padding: 25px;
+            }
+            .right-task_content{
+                padding: 0;
+            }
+            .three{
+                width: 120px;
+                height: 120px;
+            }
+            .one_task_txt .h3 {
+                font-size: 20px;
+            }
+            .profile{
+                padding: 0;
+                padding: 150px 0;
+                margin:  auto;
+                padding-left: 7%;
+                
+            }
+            .reviews_user {
+                display: flex;
+                flex-direction: column;
+                gap: 45px;
+                padding-top: 40px;
+                padding-bottom: 50px;
+            }
+            .reviews_user {
+                display: flex;
+                flex-direction: column;
+                gap: 45px;
+                padding-top: 40px;
+                padding-bottom: 50px;
+            }
+            .user_review_list {
+                max-height: 624px;
+            }
+            .fio {
+                font-size: 32px;
+            }
+            .photo_and_role {
+                gap: 10px;
+            }
+            .four {
+                width: 150px;
+                height: 150px;
+            }
+            .contacts {
+                gap: 13px;
+            }
+        
+            .edit_profil{
+                padding-top: 50px;
+                padding-bottom: 300px;
+            }
+            .edit_profile{
+                flex-direction: column;
+                gap: 15px;
+            }
+            .edit_med_inp {
+                width: 48.5%;
+            }
+            .sign_two .inputs_edit_profile .btn_one{
+                font-size: 16px;
+               
+            }
+    
+            .sign_two .inputs_edit_profile .btn_one{
+                width: 100%;
+            }
+            .edit_prof_content .edit_profile .inputs_edit_profile .btn_one{
+             
+                max-width: 245px;
+            }
+            .add {
+                padding: 0;
+                max-width: 434px;
+                margin: 0 auto;
+                padding: 150px 0;
+                /* padding: 0px 120px;
+                padding-bottom: 120px; */
+            }
+            .add_conent{
+                gap: 15px;
+            }
+            .add_form .edit_short_inp{
+                width: 48%;
+            }
+            .input {
+                padding-left: 15px;
+                border-radius: 15px;
+                padding: 19px 15px;
+            }
+            .add_form .btn_one{
+                font-size: 16px;
+                text-align: center;
+               
+            }
+            .logo{
+                width: 140px;
+            }
+            .chat_header {
+                height: 356px;
+            }
+            .chat_top_content::before {
+                content: "";
+                position: absolute;
+                /* background: #FFB800; */
+                background: linear-gradient(#fff 20%, #FFB800 12%);
+                height: 80px;
+                z-index: -1;
+                width: 100%;
+            }
+            .chat_profile{
+                gap: 10px;
+            }
+            .one {
+                border-radius: 10px;
+                margin-top: 10px;
+                width: 70px;
+                height: 70px;
+            }
+            .write_message_chat {
+                height: 40px;
+            }
+            .write_message_chat_input {
+                height: 40px;
+            }
+            .messege {
+                padding: 15px 20px;
+                
+            }
+            .small_txt{
+                font-size: 10px;
+            }
+        }
+        @media (min-width: 0px) and (max-width: 500px) {
+            .h3 {
+                font-family: 'Tactic_Sans_med';
+                font-size: 20px;
+            }
+            .h5 {
+                font-family: 'Tactic_Sans_med';
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .sign_up .btn_two .h6med {
+                font-family: 'Tactic_Sans_h6';
+                font-size: 18px;
+            }
+            .container {
+                width: 91.7%;
+            }
+            .banner{
+                padding-top: 30px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .btns{
+                flex-direction:column;
+                align-items: flex-start;
+            }
+            .btns .btn_two{
+                margin-left: 110px;
+            }
+            
+            .banner .h1 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            .banner .h1::before{
+           display: none;
+            }
+             
+            .banner_content{
+                gap: 5%;
+                flex-direction: column;
+                flex-direction: column-reverse;
+            }
+            .banner_img{
+                width: 266px;
+                height: 273px;
+            }
+            .btns{
+                gap: 10px;
+            }
+            .banner_txt{
+                gap: 20px;
+            }
+            .btn_one {
+            
+            border-radius: 18px;
+            max-height: 40px;
+        
+        }
+        .title {
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+        
+        .btn_two {
+            padding: 10px 18px;
+            border-radius: 18px;
+            max-height: 40px;
+        }
+        .sign_up .btn_two {
+            width: 95%;
+            padding: 0;
+            height: 60px;
+            padding: 0;
+        }
+        /* Ãâ€˜Ãâ€ºÃÅ¾ÃÅ¡ ÃÂ¡ ÃÅ“Ãâ€¢ÃÂÃÂ® Ãâ€”ÃÂÃâ€ÃÂÃÂ§ */
+        .nav_tasks {
+            height: 492px;
+        }
+        .nav_tasks2{
+            padding-top: 120px;
+            padding-bottom: 0;
+        }
+        
+        
+                .nav_tasks_content {
+                    height: 192px;
+                    -moz-column-gap: 3px;
+                         column-gap: 3px;
+                    row-gap: 9px;
+                  
+                        
+                }
+        .signin_content .edit_profile {
+            width: 95%;
+        
+        }
+        .inputs_edit_profiles_txt {
+            row-gap: 10px;
+        }
+        .inputs_edit_profiles_txt .input {
+            height: 40px;
+            font-size: 16px;
+        }
+        .sign_two .inputs_edit_profile .btn_one {
+            font-size: 18px;
+            height: 60px;
+        } 
+        .task_block .h6 {
+            margin-top: 9px;
+            min-width: 140px;
+           white-space: normal;
+        } 
+        .task_block {
+            padding: 20px 0;
+        }
+        .journal_top {
+            padding-right: 0;
+            padding-bottom: 20px;
+        }      
+        .filter_bar_smartfone .bar_sticky .filter_link {
+            max-width: 166px;
+        }
+        .profile{
+            padding-left: 0;
+        }
+        .name_user{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .fio{
+            margin-top: 10px;
+        }
+        .contacts{
+            text-align: center;
+            gap: 20px;
+        }
+        .task_block{
+            word-break: break-all;
+            gap: 20px;
+        }
+        .chat_top_content {
+            display: flex;
+            justify-content: center;
+            gap: 9%;
+            align-items: center;
+            width: 100%;
+        }
+        .link_nav .h5{
+            font-size: 16px;
+        }
+.nav_smart_my_task{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.inputs_edit_profile .btn_one {
+
+    margin-top: 0px;
+}
+.edit_profil{
+    padding-left: 0;
+    padding-right: 0;
+}
+.edit_profil {
+    padding-left: 0;
+    padding-right: 0;
+}
+.write_chat_form {
+    position: fixed;
+    /* left: 350px; */
+    bottom: 0;
+    padding: 30px 11px;
+    width: 100%;
+}
+.footer .profile_link{
+    display: none;
+}
+}    
+
+
+
